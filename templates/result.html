@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Prediction</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1><i>Live Weather Forecast</i></h1>
+    </div>
+    <div class="container">
+        <form action='/predict_weather' method="POST">
+            <div>
+                <label for="precipitation">Precipitation:</label>
+                <input type="text" id="precipitation" name="precipitation" placeholder="Enter precipitation">
+            </div>
+            <div>
+                <label for="temp_max">Max Temperature:</label>
+                <input type="text" id="temp_max" name="temp_max" placeholder="Enter max temperature">
+            </div>
+            <div>
+                <label for="temp_min">Min Temperature:</label>
+                <input type="text" id="temp_min" name="temp_min" placeholder="Enter min temperature">
+            </div>
+            <div>
+                <label for="wind">Wind (km/h):</label>
+                <input type="text" id="wind" name="wind" placeholder="Enter wind speed">
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <button type="submit">Predict</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
