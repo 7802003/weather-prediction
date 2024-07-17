@@ -44,5 +44,3 @@ def preprocessDataAndPredict(precipitation,temp_max,temp_min,wind):
     except FileNotFoundError:
         return "Model file not found"
 
-if __name__=="__main__":
-    app.run(debug=True)
