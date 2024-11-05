@@ -25,7 +25,7 @@ def predict():
                 prediction='Rain'
             elif prediction==3:
                 prediction='Snow'
-            else:
+            elif prediction==4:
                 prediction='Sun'
             return render_template('result1.html',prediction=prediction)
         except ValueError:
